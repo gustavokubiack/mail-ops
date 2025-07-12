@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- deployment.yaml
+- service.yaml
+
+images:
+- name: gustavokubiack/mail-api
+  newName: gustavokubiack/mail-api
+  newTag: 9f9ac4876603d8572344bd5643931437bf57fa80

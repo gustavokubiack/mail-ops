@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mail-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mail-api
+  template:
+    metadata:
+      labels:
+        app: mail-api
+    spec:
+      containers:
+        - name: mail-api
+          image: gustavokubiack/mail-api
+          ports:
+            - containerPort: 8000
