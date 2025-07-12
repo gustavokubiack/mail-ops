@@ -8,4 +8,4 @@ resources:
 images:
 - name: gustavokubiack/mail-api
   newName: gustavokubiack/mail-api
-  newTag: 5ce4d9aa232f8c1ff4d477e5152d226a04ca8ee2
+  newTag: 983a47d933b0baf456c99804a3fd09db93e40357
