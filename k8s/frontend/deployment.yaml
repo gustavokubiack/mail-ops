@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mail-front
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mail-front
+  template:
+    metadata:
+      labels:
+        app: mail-front
+    spec:
+      containers:
+        - name: mail-front
+          image: gustavokubiack/mail-front
+          ports:
+            - containerPort: 80
