@@ -19,6 +19,11 @@ spec:
           ports:
             - containerPort: 8000
           env:
+            - name: DEBUG
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: DEBUG
             - name: DB_HOST
               valueFrom:
                 secretKeyRef:

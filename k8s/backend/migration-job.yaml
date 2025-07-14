@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: mail-api-migrations
+spec:
+  template:
+    spec:
+      containers:
+        - name: migrate
+          image: gustavokubiack/mail-api
+          command: ["python", "manage.py", "migrate"]
+      restartPolicy: Never

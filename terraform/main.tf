@@ -237,6 +237,7 @@ resource "kubernetes_secret" "app_secrets" {
     EMAIL_HOST_PASSWORD  = var.email_password
     EMAIL_USE_TLS        = var.email_use_tls
     DEFAULT_FROM_EMAIL   = var.default_from_email
+    DEBUG                = var.debug
   }
 
   type = "Opaque"
