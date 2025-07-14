@@ -30,4 +30,4 @@ variable "email_user" {}
 variable "email_password" {}
 variable "email_backend" {}
 variable "default_from_email" {}
-variable "debug"
+variable "debug" {}
