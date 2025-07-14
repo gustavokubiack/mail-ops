@@ -8,4 +8,4 @@ resources:
 images:
 - name: gustavokubiack/mail-front
   newName: gustavokubiack/mail-front
-  newTag: 9f627aa0e73edffe7fccbc907a39f585d1658cb2
+  newTag: e78d030caa89660f64121c3ec9fc39355c2daf3a
